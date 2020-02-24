@@ -62,8 +62,14 @@ ion-slides{
 @media (min-width:1080){
 
 }
+.large-screen{
+    display: flex;flex-direction: row;
+}
 @media only screen and (min-width: 767px){
-  .logo {
+.large-screen{
+    display: none;
+}
+    .logo {
     margin-top: 7px;
     display: block !important;
     margin-left: 10px;
