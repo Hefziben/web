@@ -12,7 +12,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUsers,faFilm,faUserPlus} from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer/ngx';
 
 library.add(faUsers, faFilm, faYoutube, faUserPlus);
 @NgModule({
@@ -25,8 +24,6 @@ library.add(faUsers, faFilm, faYoutube, faUserPlus);
     FontAwesomeModule
   ],
   providers: [
-    FileTransfer,
-    FileTransferObject,
     StatusBar,
     SplashScreen,
     
