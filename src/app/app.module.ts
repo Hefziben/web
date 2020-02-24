@@ -26,8 +26,7 @@ library.add(faUsers, faFilm, faYoutube, faUserPlus);
   ],
   providers: [
     StatusBar,
-    SplashScreen,
-    EmailComposer,    
+    SplashScreen, 
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
