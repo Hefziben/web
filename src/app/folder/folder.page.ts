@@ -3,6 +3,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { faUsers,faFilm, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { NavController } from '@ionic/angular';
+import { EmailComposer } from '@ionic-native/email-composer/ngx';
+import { Validators, FormBuilder, FormGroup } from "@angular/forms";
+
 
 
 @Component({
@@ -16,6 +19,12 @@ faUser = faUsers;
 fafilm = faFilm;
 youtube = faYoutube;
 userplus = faUserPlus;
+nombre;
+email;
+subject;
+mensaje;
+pais;
+public messageForm: FormGroup;
 public banners = [
 {
   image:"../../assets/images/banner1.png"
@@ -27,12 +36,40 @@ public banners = [
   image:"../../assets/images/banner3.png"
 }
 ];
-  constructor(private activatedRoute: ActivatedRoute, private router:Router, private navCtrl:NavController) { }
+  constructor(    private fb: FormBuilder,private activatedRoute: ActivatedRoute, private router:Router, private navCtrl:NavController, private emailComposer:EmailComposer) {
+    this.messageForm = fb.group({
+      nombre: [""],
+      asunto: [""],
+      email: [""],
+      pais: [""],
+    mensaje:[""]
+   });
+   }
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
+  emaildata(){
+    const asunto = this.messageForm.value.asunto;
+    const correo = this.messageForm.value.email;
+    const nombre = this.messageForm.value.nombre;
+    const pais = this.messageForm.value.pais;
+    const mensaje = this.messageForm.value.mensaje;
+    const body = "Hola me llamo "+ nombre + " de " + pais + ", " + "mi email es " + correo + ", "  + mensaje;
+    this.email = "mailto:magistvlatino@gmail.com?subject=" + asunto + "&body=" + body;
+    console.log(this.email);        
+  }
+ 
+
+  sendEmail(){
+this.messageForm.reset();
+  }
+
+   
+
+   
+   
   public slidesConfig = {
     centeredSlides: true,
     slidesPerView: 1,
