@@ -1,0 +1,151 @@
+.logo {
+  max-height: 40px !important;
+  margin-top: 7px;
+  width: auto;
+}
+
+.header {
+  background: url(../../assets/images/bann3.png) no-repeat center bottom;
+  background-size: cover;
+}
+
+.white-text {
+  color: #FFF;
+  margin: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  height: 30px;
+  text-transform: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.6;
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #dc4800;
+}
+
+.main-btn, .white-btn, .black-btn, .outline-btn {
+  display: inline-block;
+  padding: 15px 50px;
+  margin: 3px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+.main-btn {
+  background: #dc4800;
+  color: #FFF;
+}
+
+/* --  section header  -- */
+.section-header {
+  position: relative;
+  margin-bottom: 26px;
+  margin: 50px 15px 0;
+}
+
+.paragraph {
+  padding: 10px 0 0 10px;
+  line-height: 1.6;
+}
+
+.section-header .title {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #10161A;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    display: block !important;
+    margin-left: 10px;
+  }
+  .header {
+    min-height: 120px;
+  }
+  h1.white-text {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .section-header h2.title {
+    font-size: 31.5px;
+  }
+  .main-btn, .default-btn, .outline-btn, .white-btn {
+    padding: 8px 22px;
+    font-size: 14px;
+  }
+  .home-content h1 {
+    font-size: 16px;
+  }
+  a button {
+    margin-top: 20px;
+  }
+  .home-content h2 {
+    font-size: 14px;
+  }
+  .header-wrapper h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+  }
+  .header-wrapper .breadcrumb {
+    float: none;
+    text-align: center;
+  }
+  h2.section-header {
+    font-weight: 25px;
+  }
+}
+/*# sourceMappingURL=distribuidores.page.css.map */

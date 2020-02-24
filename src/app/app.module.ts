@@ -8,14 +8,21 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUsers,faFilm,faUserPlus} from "@fortawesome/free-solid-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
+
+library.add(faUsers, faFilm, faYoutube, faUserPlus);
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [
     StatusBar,

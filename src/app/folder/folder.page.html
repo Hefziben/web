@@ -1,9 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+    <ion-row style="padding: 0;margin: 0;">
+      <ion-col  size="6">
+        
+    <ion-buttons slot="end">
+      <ion-menu-button  menuToggle="right" color="dark" ></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+        <img class="logo" src="../../assets/images/logo.png" alt="">
+      </ion-col>
+      <ion-col style="display: flex;flex-direction: row;" size="6">
+        <ion-button class="btn" (click)="onClick()" expand="block" >
+          Magis tv
+        </ion-button>
+        <ion-button class="btn" (click)="gotoPage('/paquetes')" color="dark"  expand="block" fill="clear" >
+
+          Paquetes/Precios
+        </ion-button>
+        <ion-button (click)="gotoPage('/descargar')" class="btn" color="dark" expand="block" fill="clear" >
+          Descargar
+        </ion-button>
+        <ion-button (click)="gotoPage('/distribuidores')" color="dark"  class="btn" expand="block" fill="clear" >
+          Distribuidores
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
   </ion-toolbar>
 </ion-header>
 
@@ -13,9 +34,244 @@
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <ion-slides  pager [options]="slidesConfig">>
+    <ion-slide *ngFor="let banner of banners">
+      <img style="width:100%" src={{banner.image}} alt="">
+    </ion-slide>
+  </ion-slides>
+  <div class="section-header text-center">
+    <h2 class="title">Sobre Nosotros</h2>
+    <p class="text-center" >El servicio de IPTV con  mayor estabilidad,contenido y la mejor experiencia de usuario  para América Central y del Sur.</p>
   </div>
+  <ion-grid fixed>
+    <ion-row >
+      <ion-col size="12" size-lg="4" size-xl="4">
+        <div class="about" >
+          <img style="height: 80px;" src="../../assets/images/c1.png">
+          <h3>Estabilidad</h3>
+          <p>Los canales en la mejor calidad, Futbol, Box, UFC y muchos más canales de distinguidos países Amerícas ,Sudaméricas. Servidores Privados y dedicados para brindarles la mayor estabilidad en su programación, sin pausas ni freez.
+          <br><br>
+          </p>
+        </div>
+      </ion-col>
+      <ion-col size="12" size-lg="4" size-xl="4" >
+        <div class="about" >
+          <img style="height: 80px;" src="../../assets/images/c2.png">
+          <h3>Soporte</h3>
+          <p>Servicio de soporte 7 días x 24 horas , contamos con nuestros distribuidores o nuestro grupo privado de usuarios donde se da todo el soporte, así también se da la información de los eventos del día con la hora y canales de transmisión.</p>
+          <br>
+        </div>
+      </ion-col>
+      <ion-col size="12" size-lg="4" size-xl="4">
+        <div class="about" >
+          <img style="height: 80px;" src="../../assets/images/c3.png">
+          <h3>Sincronización inteligente</h3>
+          <p>Magistv recopila, combina y actualiza automáticamente las últimas noticias sobre películas y series en la plataforma.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    
+
+    
+  </ion-grid>
+  <div id="features" class="section md-padding tvshow" style="background: url(../../assets/images/c4.png) no-repeat center bottom; background-size:cover;">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+      <ion-grid fixed>
+        <ion-row>
+          
+          <ion-col size="12" size-md="6" size-sm="12" size-lg="6" size-xl="6">
+            <div class="section-header">
+              <h2 style="font-size: 25px;margin-right: 17px;margin-left: 10px;">¡ DISFRUTE SIN PRECEDENTES !</h2>
+            </div>
+            <p style="text-align: justify;font-size: 17px;margin: 10px;line-height: 1.6;"> 
+              Bienvenido a la nueva generación. MagisTV es una aplicación de entretenimiento con múltiples opciones para disfrutar del mejor contenido en línea del mercado. 
+              Con más de 350 canales para latinos en vivo, acumulado los últimos Vod exclusivos recursos y los dibujos animados favoritos por los niños.
+              Vip live programas 7 días x 24 horas sin demora reproducción perfecta.
+              Magistv brindará un servicio más estable y de calidad,brindándole a usted y su familia una plataforma más avanzada para una experiencia visual.
+            </p>
+            
+					<div class="feature">
+						<p>* 7 x 24 horas servicios</p>
+					</div>
+					<div class="feature">
+						<p>* Programas con FHD, HD,H265 de calidad</p>
+					</div>
+					<div class="feature">
+						<p>* Numerosos Peliculas y Series sincronización inteligente</p>
+					</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+  </div>
+  <div id="numbers" class="section md-padding" style="background-color: black;">
+
+		<!-- /Background Image -->
+
+		<!-- Container -->
+		<div class="container">
+
+      <!-- Row -->
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12" size-lg="3" size-xl="3">
+            <div class="number">
+
+              <ion-item class="items"> 
+                <fa-icon  [icon]="faUser"></fa-icon>
+              </ion-item>
+  
+              <h3 class="white-text"><span class="counter">30000+</span></h3>
+              <span class="white-text">Selección de usuarios</span>
+            </div>
+          </ion-col>
+          <ion-col size="12"  size-lg="3" size-xl="3">
+            <div class="number">
+              <ion-item class="items"> 
+                <fa-icon  [icon]="fafilm"></fa-icon>
+              </ion-item>          
+              <h3 class="white-text"><span class="counter">25000+</span></h3>
+              <span class="white-text">Películas y Series maraviollos</span>
+            </div>
+          </ion-col>
+          <ion-col size="12"  size-lg="3" size-xl="3">
+            <div class="number">
+              <ion-item class="items"> 
+                <fa-icon  [icon]="youtube"></fa-icon>
+              </ion-item> 
+              <h3 class="white-text"><span class="counter">350+</span></h3>
+              <span class="white-text">Mayoría canales para Sudamericanos</span>
+            </div>
+          </ion-col>
+          <ion-col size="12" size-lg="3" size-xl="3">
+            <div class="number">
+
+              <ion-item class="items"> 
+                <fa-icon  [icon]="userplus"></fa-icon>
+              </ion-item>
+              <h3 class="white-text"><span class="counter">100+</span></h3>
+              <span class="white-text">distribuidores &amp; socios </span>
+            </div>
+          </ion-col>
+ 
+        </ion-row>
+      </ion-grid>
+			<div class="row">
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+				
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					
+				</div>
+				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					
+				</div>
+				<!-- /number -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+  </div>
+  <div id="mess_to" class="section md-padding" style="background: -webkit-linear-gradient(80deg, #262420, #150e0b);">
+			
+    <div class="section-header text-center" style="margin-bottom:0px;">
+      <h2 class="" style="color: #fff;">Contacto</h2>
+    </div>
+    
+    <div class="container">
+      <!-- Row -->
+      <div class="row" >
+        
+        <div class="col-md-8 col-md-offset-2">
+          <img style="float: left;height:40px;" src="../../assets/images/c29.png">
+          <p style="color: #fff;text-indent: 20px;">¿Tienes dudas? Escríbenos y resolveremos todas tus consultas.</p>
+          <p style="color: #fff;text-indent: 20px;">Si lo que busca es una compra mayorista, debes escribir en Asunto “mayorista”.</p>
+        </div>
+        
+        <div class="col-md-8 col-md-offset-2">
+          <form class="contact-form">
+          <div style="width: 50%;float: left;">
+          <input id="name" type="text" class="input" placeholder="Nombre *">
+          <input id="title" type="text" class="input" placeholder="Asunto *">
+          <input id="email" type="text" class="input" placeholder="EMAIL*">
+          <input id="country" type="text" class="input" placeholder="País*">
+          </div>	
+          <div style="width: 50%;float: right;">
+          <textarea id="info" class="" placeholder="Message"></textarea>
+          </div>	
+          <div style="width: 100%;overflow: hidden;position: relative;"></div>
+           </form>
+          
+          <div style="width: 100%;overflow: hidden;margin-top: 10px;">
+            <a target="_blank" href="https://www.facebook.com/magistvapp">
+              <img style="height: 50px;" src="../../assets/images/c30.png">
+            </a>
+            <a id="whatsapp" href="whatsapp://send?phone=+8613528887586&amp;text=Hello">
+              <img style="height: 50px;margin-left: 100px;;" src="../../assets/images/c31.png">
+            </a>
+            <button style="margin-top: 8px;" type="button" class="main-btn bbs_send">Enviar</button>          
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<footer id="footer" class="sm-padding bg-dark">
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Row -->
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1" id="footer-message">
+        
+      </div>		
+    </div>
+    <!-- /Row -->
+
+  </div>
+  <!-- /Container -->
+  
+  <!-- /footer follow -->
+  <div class="col-md-12" style="border-top: 1px solid #666;">
+    <!-- footer copyright -->
+    <div class="footer-copyright" style="color: #fff;margin-top: 20px;">
+      <p>Copyright©️ 2019 All Rights Reserved</p>
+    </div>
+    <!-- /footer copyright -->
+  </div>
+
+</footer>
+<!-- <div id="back-to-top" style="display: block;"></div> -->
+  
+ 
 </ion-content>

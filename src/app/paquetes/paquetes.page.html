@@ -1,0 +1,99 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-row style="padding: 0;margin: 0;">
+      <ion-col  size="6">
+        
+    <ion-buttons slot="end">
+      <ion-menu-button  menuToggle="right" color="dark" ></ion-menu-button>
+    </ion-buttons>
+        <img class="logo" src="../../assets/images/logo.png" alt="">
+      </ion-col>
+      <ion-col style="display: flex;flex-direction: row;" size="6">
+        <ion-button class="btn" (click)="gotoPage('/folder/inicio')" expand="block"color="dark" fill="clear">
+          Magis tv
+        </ion-button>
+        <ion-button class="btn" (click)="gotoPage('/paquetes')"  expand="block"  >
+          Paquetes/Precios
+        </ion-button>
+        <ion-button (click)="gotoPage('/descargar')" class="btn" color="dark" expand="block" fill="clear" >
+          Descargar
+        </ion-button>
+        <ion-button (click)="gotoPage('/distribuidores')" color="dark"  class="btn" expand="block" fill="clear" >
+          Distribuidores
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="header">
+
+    <div class="home-content">
+      <h1 class="white-text">¡ Disfrutando de la Aplicación de Magistv en su <br>
+               Android Mobile o TV Box !</h1>
+               <h2 class="white-text"> Elija el plan que se ajuste a sus necesidades.</h2>
+    </div>
+  </div>
+  <div >
+
+    <!-- Section header -->
+    <div class="section-header text-center">
+      <h2 style="font-weight: 700;text-align: center;font-size: 25px;">Paquete</h2>
+    </div>
+    <!-- /Section header -->
+    <ion-grid fixed style="width: 100%;">
+      <ion-row>
+        <ion-col size="12" size-lg="3" size-xl="3">
+          <div class="product">
+            <h3 style="margin-bottom:0px">UN Mes &nbsp;&nbsp;<br><br>&nbsp;</h3>
+            <h3 style="color:#dc4800;margin-top:15px;">USD 9<span class="duration"></span></h3>
+            <p style="font-size:10px" class="text-left">*　Dispositivos simultáneos: 3<br>*　Actualización constante de<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;información<br>*　Admite HD y FHD<br>*　Opción para actualizar<br>*　Ver TV  en Android TV BOX  y Andorid <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;móvil <br>*　Más dispositivos que vienen pronto<br>*　OS mínimo 5.1.1o superior<br>*　El IVA no está incluido y se cobrará <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adicionalmente.</p>
+          </div>
+          <a class="paypal-btn" href="buy.html?id=1&amp;price=9&amp;name=UN Mes &nbsp;&nbsp;<br><br>&nbsp;">
+            <button class="black-btn margin-center product-btn">Comprar</button></a>
+        </ion-col>
+        <ion-col size="12" size-lg="3" size-xl="3">
+          <div class="product">
+            <h3 style="margin-bottom:0px">3 Meses &nbsp;&nbsp;<br><br>&nbsp;</h3>
+            <h3 style="color:#dc4800;margin-top:15px;">USD 26.99<span class="duration"></span></h3>
+            <p style="font-size:10px" class="text-left">*　Dispositivos simultáneos: 3<br>*　Actualización constante de<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;información<br>*　Admite HD y FHD<br>*　Opción para actualizar<br>*　Ver TV  en Android TV BOX  y Andorid <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;móvil <br>*　Más dispositivos que vienen pronto<br>*　OS mínimo 5.1.1o superior<br>*　El IVA no está incluido y se cobrará <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adicionalmente.</p>
+          </div>
+          <a class="paypal-btn" href="buy.html?id=2&amp;price=26.99&amp;name=3 Meses &nbsp;&nbsp;<br><br>&nbsp;"><button class="black-btn margin-center product-btn">Comprar</button></a>
+        
+        </ion-col>
+        <ion-col size="12" size-lg="3" size-xl="3">
+          <div class="product">
+            <h3 style="margin-bottom:0px">6+1 Meses &nbsp;&nbsp;<br><br>&nbsp;</h3>
+            <h3 style="color:#dc4800;margin-top:15px;">USD 48.99<span class="duration"></span></h3>
+            <p style="font-size:10px" class="text-left">*　Dispositivos simultáneos: 3<br>*　Actualización constante de<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;información<br>*　Admite HD y FHD<br>*　Opción para actualizar<br>*　Ver TV  en Android TV BOX  y Andorid <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;móvil <br>*　Más dispositivos que vienen pronto<br>*　OS mínimo 5.1.1o superior<br>*　El IVA no está incluido y se cobrará <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adicionalmente.</p>
+          </div>
+          <a class="paypal-btn" href="buy.html?id=3&amp;price=48.99&amp;name=6+1 Meses &nbsp;&nbsp;<br><br>&nbsp;"><button class="black-btn margin-center product-btn">Comprar</button></a>
+        
+          
+        </ion-col>
+        <ion-col size="12" size-lg="3" size-xl="3">
+          <div class="product">
+            <h3 style="margin-bottom:0px">12+2 Meses &nbsp;&nbsp;<br><br>&nbsp;</h3>
+            <h3 style="color:#dc4800;margin-top:15px;">USD 86.99<span class="duration"></span></h3>
+            <p style="font-size:10px" class="text-left">*　Dispositivos simultáneos: 3<br>*　Actualización constante de<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;información<br>*　Admite HD y FHD<br>*　Opción para actualizar<br>*　Ver TV  en Android TV BOX  y Andorid <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;móvil <br>*　Más dispositivos que vienen pronto<br>*　OS mínimo 5.1.1o superior<br>*　El IVA no está incluido y se cobrará <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adicionalmente.</p>
+          </div>
+          <a class="paypal-btn" href="buy.html?id=4&amp;price=86.99&amp;name=12+2 Meses &nbsp;&nbsp;<br><br>&nbsp;"><button class="black-btn margin-center product-btn">Comprar</button></a>
+        
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+ <div style="background-color: black;margin-top: 30px;">
+  
+  <div class="col-md-12" style="border-top: 1px solid #666;height:90px">
+    <!-- footer copyright -->
+    <div class="footer-copyright" style="color: #fff;margin-top: 20px;">
+      <p>Copyright©️ 2019 All Rights Reserved</p>
+    </div>
+    <!-- /footer copyright -->
+  </div>
+
+ </div>
+</ion-content>
+
