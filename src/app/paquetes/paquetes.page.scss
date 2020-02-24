@@ -108,11 +108,27 @@ h2.white-text{
     padding-bottom: 60px;
 }
 
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.side-menu{
+    display: none;
+}
   @media only screen and (max-width: 767px){
     .logo {
       display: block !important;
       margin-left: 10px;
   }
+  .menu{
+    display: none;
+}
+.side-menu{
+    display:flex;
+}
+
+
 
   h1.white-text{
     padding: 14px;

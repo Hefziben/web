@@ -6,9 +6,7 @@ body {
   overflow-x: hidden;
   color: #000;
 }
-ion-menu-button {
-  color: var(--ion-color-primary);
-}
+
 .btn{
     // padding: 0;
     // margin: 0;
@@ -461,7 +459,22 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     display: none;
 }
 
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.side-menu{
+    display: none;
+}
 @media only screen and (max-width: 767px) {
+    .menu{
+        display: none;
+    }
+    .side-menu{
+        display:flex;
+    }
+   
     #nav.nav-transparent .navbar-brand .logo-alt {
         display: none !important;
     }
@@ -470,6 +483,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         margin-left: 10px;
     }
 }
+
+@media only screen and (min-width: 992px){
+
+  }
 
 
 /*------------------------------------*\

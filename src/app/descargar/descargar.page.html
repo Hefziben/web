@@ -1,21 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-row style="padding: 0;margin: 0;">
-      <ion-col  size="6">
-        
-    <ion-buttons slot="end">
-      <ion-menu-button  menuToggle="right" color="dark" ></ion-menu-button>
-    </ion-buttons>
+      <ion-col  size="6"  size-md="4" size-xl="6">        
         <img class="logo" src="../../assets/images/logo.png" alt="">
       </ion-col>
-      <ion-col style="display: flex;flex-direction: row;" size="6">
-        <ion-button class="btn" (click)="gotoPage('/folder/inicio')" expand="block"color="dark" fill="clear">
+      <ion-col class="menu" size="6" size-md="8" size-xl="6"  >
+        <ion-button class="btn" (click)="gotoPage('/')" expand="block" >
           Magis tv
         </ion-button>
-        <ion-button class="btn" (click)="gotoPage('/paquetes')" color="dark" fill="clear" expand="block"  >
+        <ion-button class="btn" (click)="gotoPage('/paquetes')" color="dark"  expand="block" fill="clear" >
+
           Paquetes/Precios
         </ion-button>
-        <ion-button (click)="gotoPage('/descargar')" class="btn"  expand="block"  >
+        <ion-button (click)="gotoPage('/descargar')" class="btn" color="dark" expand="block" fill="clear" >
           Descargar
         </ion-button>
         <ion-button (click)="gotoPage('/distribuidores')" color="dark"  class="btn" expand="block" fill="clear" >
@@ -23,6 +20,10 @@
         </ion-button>
       </ion-col>
     </ion-row>
+    <ion-buttons class="side-menu"  slot="end">
+      <ion-menu-button color="dark" ></ion-menu-button>
+    </ion-buttons>
+    
 
   </ion-toolbar>
 </ion-header>
@@ -34,8 +35,8 @@
                   <h1 class="white-text">¡Prueba nuestro servicio gratis por un día!</h1>                
               </ion-col>
               <ion-col size="12" style="padding: 8% 15% 0% 15%">
-                <a target="_blank" id="value1"><img class="download" style="float: left;max-width: 35%;" src="../../assets/images/c12.png"></a>
-                <a target="_blank" id="value1"><img class="download2" style="float: right;max-width: 35%;" src="../../assets/images/c13.png"></a>
+                <a target="_self" href="http://magistvchile.xyz/app/tvbox.apk" id="value1"><img class="download" style="float: left;max-width: 35%;" src="../../assets/images/c12.png"></a>
+                <a target="_self" href="http://magistvchile.xyz/app/movil.apk" id="value1"><img class="download2" style="float: right;max-width: 35%;" src="../../assets/images/c13.png"></a>
               </ion-col>
             </ion-row >
           </ion-grid>
@@ -49,10 +50,10 @@
         </div>
         <ion-grid fixed style="width: 100%;margin-bottom: 30px;">
           <ion-row >
-            <ion-col style="padding: 10px 15px;" size="12" size-lg="4" size-xl="4">
+            <ion-col  style="padding: 10px 15px;" size="12" size-lg="4" size-xl="4">
               <div class="about">
                 <div class="blog-img">
-                  <img style="margin: auto;display: block;max-height: 150px;" class="img-responsive" src="../../assets/images/c14.png" alt="">
+                  <img  style="margin: auto;display: block;max-height: 150px;" class="img-responsive" src="../../assets/images/c14.png" alt="">
                 </div>
                 <div class="blog-content">
                   <h3 class="text-center" class="font">1.Descarga e instala</h3>

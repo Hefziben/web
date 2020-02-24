@@ -1,18 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-row style="padding: 0;margin: 0;">
-      <ion-col  size="6">
-        
-    <ion-buttons slot="end">
-      <ion-menu-button  menuToggle="right" color="dark" ></ion-menu-button>
-    </ion-buttons>
+      <ion-col  size="6"  size-md="4" size-xl="6">        
         <img class="logo" src="../../assets/images/logo.png" alt="">
       </ion-col>
-      <ion-col style="display: flex;flex-direction: row;" size="6">
-        <ion-button class="btn" (click)="gotoPage('/folder/inicio')" expand="block"color="dark" fill="clear">
+      <ion-col class="menu" size="6" size-md="8" size-xl="6"  >
+        <ion-button class="btn" (click)="gotoPage('/')" expand="block" >
           Magis tv
         </ion-button>
-        <ion-button class="btn" (click)="gotoPage('/paquetes')"  expand="block"  >
+        <ion-button class="btn" (click)="gotoPage('/paquetes')" color="dark"  expand="block" fill="clear" >
+
           Paquetes/Precios
         </ion-button>
         <ion-button (click)="gotoPage('/descargar')" class="btn" color="dark" expand="block" fill="clear" >
@@ -23,6 +20,10 @@
         </ion-button>
       </ion-col>
     </ion-row>
+    <ion-buttons class="side-menu"  slot="end">
+      <ion-menu-button color="dark" ></ion-menu-button>
+    </ion-buttons>
+    
 
   </ion-toolbar>
 </ion-header>
@@ -46,11 +47,11 @@
       <ion-row>
         <ion-col size="12" size-lg="3" size-xl="3">
           <div class="product">
-            <h3 style="margin-bottom:0px">UN Mes &nbsp;&nbsp;<br><br>&nbsp;</h3>
+            <h3 style="margin-bottom:0px">Un Mes &nbsp;&nbsp;<br><br>&nbsp;</h3>
             <h3 style="color:#dc4800;margin-top:15px;">USD 9<span class="duration"></span></h3>
             <p style="font-size:10px" class="text-left">*　Dispositivos simultáneos: 3<br>*　Actualización constante de<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;información<br>*　Admite HD y FHD<br>*　Opción para actualizar<br>*　Ver TV  en Android TV BOX  y Andorid <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;móvil <br>*　Más dispositivos que vienen pronto<br>*　OS mínimo 5.1.1o superior<br>*　El IVA no está incluido y se cobrará <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adicionalmente.</p>
           </div>
-          <a class="paypal-btn" href="buy.html?id=1&amp;price=9&amp;name=UN Mes &nbsp;&nbsp;<br><br>&nbsp;">
+          <a target="_blank" class="paypal-btn" href="https://www.paypal.com/paypalme2/magistvchile?locale.x=en_XC">
             <button class="black-btn margin-center product-btn">Comprar</button></a>
         </ion-col>
         <ion-col size="12" size-lg="3" size-xl="3">
@@ -59,7 +60,7 @@
             <h3 style="color:#dc4800;margin-top:15px;">USD 26.99<span class="duration"></span></h3>
             <p style="font-size:10px" class="text-left">*　Dispositivos simultáneos: 3<br>*　Actualización constante de<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;información<br>*　Admite HD y FHD<br>*　Opción para actualizar<br>*　Ver TV  en Android TV BOX  y Andorid <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;móvil <br>*　Más dispositivos que vienen pronto<br>*　OS mínimo 5.1.1o superior<br>*　El IVA no está incluido y se cobrará <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adicionalmente.</p>
           </div>
-          <a class="paypal-btn" href="buy.html?id=2&amp;price=26.99&amp;name=3 Meses &nbsp;&nbsp;<br><br>&nbsp;"><button class="black-btn margin-center product-btn">Comprar</button></a>
+          <a target="_blank" class="paypal-btn" href="https://www.paypal.com/paypalme2/magistvchile?locale.x=en_XC"><button class="black-btn margin-center product-btn">Comprar</button></a>
         
         </ion-col>
         <ion-col size="12" size-lg="3" size-xl="3">
@@ -68,7 +69,7 @@
             <h3 style="color:#dc4800;margin-top:15px;">USD 48.99<span class="duration"></span></h3>
             <p style="font-size:10px" class="text-left">*　Dispositivos simultáneos: 3<br>*　Actualización constante de<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;información<br>*　Admite HD y FHD<br>*　Opción para actualizar<br>*　Ver TV  en Android TV BOX  y Andorid <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;móvil <br>*　Más dispositivos que vienen pronto<br>*　OS mínimo 5.1.1o superior<br>*　El IVA no está incluido y se cobrará <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adicionalmente.</p>
           </div>
-          <a class="paypal-btn" href="buy.html?id=3&amp;price=48.99&amp;name=6+1 Meses &nbsp;&nbsp;<br><br>&nbsp;"><button class="black-btn margin-center product-btn">Comprar</button></a>
+          <a target="_blank" class="paypal-btn" href="https://www.paypal.com/paypalme2/magistvchile?locale.x=en_XC"><button class="black-btn margin-center product-btn">Comprar</button></a>
         
           
         </ion-col>
@@ -78,7 +79,7 @@
             <h3 style="color:#dc4800;margin-top:15px;">USD 86.99<span class="duration"></span></h3>
             <p style="font-size:10px" class="text-left">*　Dispositivos simultáneos: 3<br>*　Actualización constante de<br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;información<br>*　Admite HD y FHD<br>*　Opción para actualizar<br>*　Ver TV  en Android TV BOX  y Andorid <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;móvil <br>*　Más dispositivos que vienen pronto<br>*　OS mínimo 5.1.1o superior<br>*　El IVA no está incluido y se cobrará <br>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adicionalmente.</p>
           </div>
-          <a class="paypal-btn" href="buy.html?id=4&amp;price=86.99&amp;name=12+2 Meses &nbsp;&nbsp;<br><br>&nbsp;"><button class="black-btn margin-center product-btn">Comprar</button></a>
+          <a target="_blank" class="paypal-btn" href="https://www.paypal.com/paypalme2/magistvchile?locale.x=en_XC"><button class="black-btn margin-center product-btn">Comprar</button></a>
         
         </ion-col>
       </ion-row>

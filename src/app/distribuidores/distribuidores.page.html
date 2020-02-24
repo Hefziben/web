@@ -1,28 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-row style="padding: 0;margin: 0;">
-      <ion-col style="padding: 0;"  size="6">
-        
-    <ion-buttons slot="end">
-      <ion-menu-button  menuToggle="right" color="dark" ></ion-menu-button>
-    </ion-buttons>
+      <ion-col  size="6"  size-md="4" size-xl="6">        
         <img class="logo" src="../../assets/images/logo.png" alt="">
       </ion-col>
-      <ion-col style="display: flex;flex-direction: row;padding: 0;" size="6">
-        <ion-button class="btn" (click)="gotoPage('/folder/inicio')" expand="block"color="dark" fill="clear">
+      <ion-col class="menu" size="6" size-md="8" size-xl="6"  >
+        <ion-button class="btn" (click)="gotoPage('/')" expand="block" >
           Magis tv
         </ion-button>
-        <ion-button class="btn" (click)="gotoPage('/paquetes')" color="dark" fill="clear" expand="block"  >
+        <ion-button class="btn" (click)="gotoPage('/paquetes')" color="dark"  expand="block" fill="clear" >
+
           Paquetes/Precios
         </ion-button>
-        <ion-button (click)="gotoPage('/descargar')" class="btn" color="dark" fill="clear" expand="block"  >
+        <ion-button (click)="gotoPage('/descargar')" class="btn" color="dark" expand="block" fill="clear" >
           Descargar
         </ion-button>
-        <ion-button (click)="gotoPage('/distribuidores')"  class="btn" expand="block"  >
+        <ion-button (click)="gotoPage('/distribuidores')" color="dark"  class="btn" expand="block" fill="clear" >
           Distribuidores
         </ion-button>
       </ion-col>
     </ion-row>
+    <ion-buttons class="side-menu"  slot="end">
+      <ion-menu-button color="dark" ></ion-menu-button>
+    </ion-buttons>
+    
 
   </ion-toolbar>
 </ion-header>
@@ -98,8 +99,8 @@
                 
                 <p><img src="../../assets/images/c9.png" style="max-height: 50px;margin-top: 30px;margin-bottom: 20px;"></p>
                 
-                <a style="color: #000;text-decoration: none;justify-content: flex-start;padding: 0;margin: 0;height: 50px;" target="_blank" href="mailto:magistvapp@gmail.com "><p>Para problemas tecnicos: <span style="color: #4b8bff;"> magistvapp@gmail.com </span></p></a>
-                <a style="color: #000;text-decoration: none;justify-content: flex-start;padding: 0;margin: 0;height: 50px" target="_blank" href="mailto:lunalatino123@gmail.com"><p>para asuntos comerciales: <span style="color: #4b8bff;">lunalatino123@gmail.com</span></p></a>
+                <a style="color: #000;text-decoration: none;justify-content: flex-start;padding: 0;margin: 0;height: 50px;" target="_blank" href="mailto:magistvlatino@gmail.com "><p>Para problemas tecnicos: <span style="color: #4b8bff;">magistvlatino@gmail.com</span></p></a>
+                <a style="color: #000;text-decoration: none;justify-content: flex-start;padding: 0;margin: 0;height: 50px" target="_blank" href="mailto:magistvlatino@gmail.com"><p>para asuntos comerciales: <span style="color: #4b8bff;">magistvlatino@gmail.com</span></p></a>
              
               </ion-col>
               <ion-col size="12" size-lg="6" size-xl="6">

@@ -1,15 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-row style="padding: 0;margin: 0;">
-      <ion-col  size="6">
-        
-    <ion-buttons slot="end">
-      <ion-menu-button  menuToggle="right" color="dark" ></ion-menu-button>
-    </ion-buttons>
+      <ion-col  size="6"  size-md="4" size-xl="6">        
         <img class="logo" src="../../assets/images/logo.png" alt="">
       </ion-col>
-      <ion-col  style="display: flex;flex-direction: row;" size="6">
-        <ion-button class="btn" (click)="onClick()" expand="block" >
+      <ion-col class="menu" size="6" size-md="8" size-xl="6"  >
+        <ion-button class="btn" (click)="gotoPage('/')" expand="block" >
           Magis tv
         </ion-button>
         <ion-button class="btn" (click)="gotoPage('/paquetes')" color="dark"  expand="block" fill="clear" >
@@ -24,6 +20,10 @@
         </ion-button>
       </ion-col>
     </ion-row>
+    <ion-buttons class="side-menu"  slot="end">
+      <ion-menu-button color="dark" ></ion-menu-button>
+    </ion-buttons>
+    
 
   </ion-toolbar>
 </ion-header>
@@ -233,10 +233,10 @@
            </form>
           
           <div style="width: 100%;overflow: hidden;margin-top: 10px;">
-            <a target="_blank" href="https://www.facebook.com/magistvapp">
+            <a target="_blank" href="Facebook: https://m.facebook.com/pg/Magistv-Latino-103560017716460/posts/?ref=page_internal&mt_nav=0">
               <img style="height: 50px;" src="../../assets/images/c30.png">
             </a>
-            <a id="whatsapp" href="whatsapp://send?phone=+8613528887586&amp;text=Hello">
+            <a id="whatsapp" href="whatsapp://send?phone=+56974081293&amp;text=Hello">
               <img style="height: 50px;margin-left: 100px;;" src="../../assets/images/c31.png">
             </a>
             <button style="margin-top: 8px;" type="button" class="main-btn bbs_send">Enviar</button>          
