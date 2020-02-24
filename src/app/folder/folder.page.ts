@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { faUsers,faFilm, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { NavController } from '@ionic/angular';
-import { EmailComposer } from '@ionic-native/email-composer/ngx';
 import { Validators, FormBuilder, FormGroup } from "@angular/forms";
 
 
@@ -36,7 +35,7 @@ public banners = [
   image:"../../assets/images/banner3.png"
 }
 ];
-  constructor(    private fb: FormBuilder,private activatedRoute: ActivatedRoute, private router:Router, private navCtrl:NavController, private emailComposer:EmailComposer) {
+  constructor(    private fb: FormBuilder,private activatedRoute: ActivatedRoute, private router:Router, private navCtrl:NavController) {
     this.messageForm = fb.group({
       nombre: [""],
       asunto: [""],

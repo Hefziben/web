@@ -12,7 +12,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUsers,faFilm,faUserPlus} from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { EmailComposer } from '@ionic-native/email-composer/ngx';
 
 
 library.add(faUsers, faFilm, faYoutube, faUserPlus);
