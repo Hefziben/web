@@ -35,8 +35,8 @@
     </ion-toolbar>
   </ion-header>
   <ion-slides  pager [options]="slidesConfig">>
-    <ion-slide *ngFor="let banner of banners">
-      <img style="width:100%" src={{banner.image}} alt="">
+    <ion-slide *ngFor="let banner of banners">  
+      <img (click)="gotoPage(banner.pagina)" style="width:100%" src={{banner.image}} alt="">
     </ion-slide>
   </ion-slides>
   <div class="section-header text-center">
@@ -249,7 +249,7 @@
                 <a target="_blank" href="https://facebook.com/Magistv-Latino-103560017716460">
                   <img style="height: 50px;" src="../../assets/images/c30.png">
                 </a>
-                <a target="_blank" id="whatsapp" href="https://wa.me/56974081293?text=Hola">
+                <a target="_blank" id="whatsapp" href="https://wa.me/56968379053?text=Hola">
                   <img style="height: 50px;margin-left: 100px;;" src="../../assets/images/c31.png">
                 </a>
                 <a href={{email}} >

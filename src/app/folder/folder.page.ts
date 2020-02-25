@@ -26,13 +26,16 @@ pais;
 public messageForm: FormGroup;
 public banners = [
 {
-  image:"../../assets/images/banner1.png"
+  image:"../../assets/images/banner1.png",
+  pagina:'/'
 },
 {
-  image:"../../assets/images/banner2.png"
+  image:"../../assets/images/banner2.png",
+  pagina:'/paquetes'
 },
 {
-  image:"../../assets/images/banner3.png"
+  image:"../../assets/images/banner3.png",
+  pagina:'/descargar'
 }
 ];
   constructor(    private fb: FormBuilder,private activatedRoute: ActivatedRoute, private router:Router, private navCtrl:NavController) {
