@@ -25,10 +25,10 @@ mensaje;
 pais;
 public messageForm: FormGroup;
 public banners = [
-// {
-//   image:"../../assets/images/banner1.png",
-//   pagina:'/'
-// },
+{
+  image:"../../assets/images/banner1.png",
+  pagina:'/'
+},
 {
   image:"../../assets/images/banner2.png",
   pagina:'/paquetes'
